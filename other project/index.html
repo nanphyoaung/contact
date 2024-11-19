@@ -4,10 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+  <div class="container">
+        <div class="forms">
+            <div class="form left">
+                <h1>Login</h1>
+                <form>
+                    <div class="input-field">
+                        <input type="email" placeholder="Enter your email" required>
+                        <i class="uil lock uil-envelope-edit"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Enter your password" required>
+                        <i class="uil lock uil-lock"></i>
+                        <!-- <i class="uil uil-eye blind"></i> -->
+                        <i class="uil blind uil-eye-slash"></i>
+                    </div>
+                    <div class="check-container">
+                        <div>
+                            <input type="checkbox" id="check">
+                            <label for="check">Remember me</label>
+                        </div>
+                        <div><a href="#">Forgot password?</a></div>
+                    </div>
+                    <button class="login">Login Now</button>
+                    <div class="not">
+                        <span>Not a member?</span>
+                        <a href="#" class="sigup">Sigup now</a>
+                    </div>
+                </form>
+            </div>
     
+    
+            <div class="form right">
+                <h1>Registration</h1>
+                <form>
+                    <div class="input-field">
+                        <input type="text" placeholder="Enter your name" required>
+                        <i class="uil lock uil-user"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="email" placeholder="Enter your email">
+                        <i class="uil lock uil-envelope-edit"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Enter your password" required>
+                        <i class="uil lock uil-lock"></i>
+                        <!-- <i class="uil blind uil-eye "></i> -->
+                        <!-- <i class="uil blind uil-eye-slash"></i> -->
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Enter your password" required>
+                        <i class="uil lock uil-lock"></i>
+                        <!-- <i class="uil uil-eye blind"></i> -->
+                        <i class="uil blind uil-eye-slash"></i>
+                    </div>
+                    <div class="check-container">
+                        <div>
+                            <input type="checkbox" id="check">
+                            <label for="check">I accept all item & conditions</label>
+                        </div>
+                    </div>
+                    <button class="login">Register Now</button>
+                    <div class="not">
+                        <span>Already have an account?</span>
+                        <a href="#" class="now">Login now</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+       
+  </div>
     
 <script src="./app.js"></script>
 </body>

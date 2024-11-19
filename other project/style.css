@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+}
+.container{
+    max-width:430px ;
+    width: 100%;
+    border-radius: 15px;
+    background-color: white;
+}
+
+ .container .forms{
+    display: flex;
+    width: 200%;
+    height: 440px;
+    align-items: center;
+    justify-content: center;
+    transition: height 0.2s ease;
+}  
+ .active .forms {
+    height:580px;
+}
+.active .forms .form{
+    margin-left: -50%;
+    transition: margin-left 0.09s ease,opacity 0.01s ease;
+}
+.active .forms .left{
+    opacity: 0;
+}
+.forms .right{
+    opacity: 0;
+}
+.active .forms .right{
+    opacity: 1;
+}
+
+.form{
+    width: 50%;
+    background-color: white;
+    padding: 30px;
+}
+.container .form h1{
+    position: relative;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.container .form h1::before{
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 3px;
+    background-color: blue;
+    bottom: -3px;
+}
+.form .input-field{
+    position: relative;
+    width:100% ;
+    height: 50px;   
+    margin-bottom: 25px;
+}
+.form .input-field input{
+    width: 100%;
+    height: 100%;
+    padding-left: 30px;
+    border:none ;
+    outline: none;
+    border-bottom: 2px solid lightgray;
+    transition:all 0.3s linear ;
+
+}
+.form .input-field input:focus{
+    border-bottom-color: blue ;
+}
+
+input::placeholder{
+    font-size: 16px;
+}
+ .input-field i.lock{
+    position: absolute;
+    left: 0;
+    top: 12px;
+    font-size: 20px;
+}
+.input-field i.blind{
+    font-size: 20px;
+    position: absolute;
+    top: 12px;
+    right: 0;
+}
+.form .input-field input:focus~i{
+    color: blue ;
+}
+.form .check-container{
+    display: flex;
+    justify-content: space-between;
+}
+.form .check-container label{
+    cursor: pointer;
+}
+.form .check-container input{
+    margin-right: 6px;
+}
+.form .check-container a{
+    text-decoration: none;
+}
+.form .check-container a:hover{
+    text-decoration: underline;
+}
+.form .login{
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+    color: white;
+    background-color: blue;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.form .login:hover{
+    background-color: rgb(124, 124, 227);
+}
+ .form .not{
+    text-align: center;
+}
+.form .not a{
+    text-decoration: none;
+}
+.form .not a:hover{
+    text-decoration: underline;
+}
+.right{
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+
+
